@@ -9,7 +9,7 @@
 </head>
 <body>
     <section class="conteudo-pricipal">
-        <h2 class="titulo-principal">Meus Objetivos do Ano_</h2>
+        <h2 class="titulo-principal"><span>Meus Objetivos do Ano_</span></h2>
         <div class="botoes">
             <button class="botao">Cursos na Alura</button>
             <button class="botao">Criar projetos em Javascript</button>
@@ -21,8 +21,6 @@
    
 </body>
 </html>
-
-
 
 
 
@@ -44,5 +42,24 @@ body{
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
 }
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 
-v
+}
+
+.titulo-principal{
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+
+}
+
+.titulo-principal span{
+    color: var(--vermelho);
+}
