@@ -9,7 +9,7 @@
 </head>
 <body>
     <section class="conteudo-pricipal">
-        <h2 class="titulo-principal"><span>Meus Objetivos do Ano_</span></h2>
+        <h2 class="titulo-principal">Meus Objetivos do Ano<span>_</span></h2>
         <div class="botoes">
             <button class="botao">Cursos na Alura</button>
             <button class="botao">Criar projetos em Javascript</button>
@@ -29,7 +29,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 :root{
     --cor-de-fundo: #1E1E1E;
-    --verde: #6FFF57;
+    --verde: #6fff57;
     --branco: #FFFFFF;
     --botao-ativo: #3A375E;
     --botao-inativo: rgba(58, 55, 94, 0.5);
@@ -61,5 +61,24 @@ body{
 }
 
 .titulo-principal span{
-    color: var(--vermelho);
+    color: var(--verde);
+}
+.botao{
+    font-family: "Chakra Petch", sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 4px solid var(--botao-ativo);
+    border-right: 4px solid var(--botao-ativo);
+    border-top: none;
+}
+
+@media  screen and (min-width: 768px) {
+    
 }
