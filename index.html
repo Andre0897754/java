@@ -11,14 +11,14 @@
     <section class="conteudo-pricipal">
         <h2 class="titulo-principal">Meus Objetivos do Ano<span>_</span></h2>
         <div class="botoes">
-            <button class="botao">Cursos na Alura</button>
+            <button class="botao ativo">Cursos na Alura</button>
             <button class="botao">Criar projetos em Javascript</button>
             <button class="botao">Criar um portfolio</button>
             <button class="botao">Atualizar meu curriculo</button>
 
         </div>
     </section>
-   
+    <script src="main.js"></script>
 </body>
 </html>
 
@@ -86,6 +86,13 @@ body{
     display:block;
 }
 
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+
+
+
 @media  screen and (min-width: 768px) {
     .botoes{
         display:flex;
@@ -97,4 +104,21 @@ body{
         border-radius: 0 40px 0 0;
     }
 
+}
+
+
+
+
+const botoes = document.querySelectorAll(".botao");
+
+for(let i=0;i <botoes.length;i++){
+    botoes[i].onclick = function(){
+        
+        for(let j=0;<botoes.length;j++){
+            botoes[j].classList.add("ativo");
+        }
+        
+        botoes[i].classList.add("ativo");
+    }
+    console.log();
 }
